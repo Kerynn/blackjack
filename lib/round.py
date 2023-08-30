@@ -10,4 +10,7 @@ def calclulate_score(current_hand):
   total_score = sum(current_hand)
   if total_score == 21 and len(current_hand) == 2:
     total_score = 0
+  if 11 in current_hand and total_score > 21:
+    current_hand.remove(11)
+    current_hand.append(1)
   return total_score
