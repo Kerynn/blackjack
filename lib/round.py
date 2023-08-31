@@ -37,5 +37,9 @@ class Round:
     user_cards = []
     computer_cards = []
     continue_play = True
+
+    for _ in range(2):
+      user_cards.append(deal_card())
+      computer_cards.append(deal_card())
     
 
