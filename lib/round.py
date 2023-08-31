@@ -33,3 +33,9 @@ class Round:
     else: 
       return "You lose!"
 
+  def play_game():
+    user_cards = []
+    computer_cards = []
+    continue_play = True
+    
+
