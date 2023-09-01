@@ -42,4 +42,10 @@ class Round:
       user_cards.append(deal_card())
       computer_cards.append(deal_card())
     
+    while continue_play:
+      user_score = calclulate_score(user_cards)
+      computer_score = calclulate_score(computer_cards)
+      print(f"Your cards: {user_cards}, current score: {user_score}")
+      print(f"Computer's first card: {computer_cards[0]}")
+      
 
