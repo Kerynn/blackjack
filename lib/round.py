@@ -56,6 +56,10 @@ class Round:
           user_cards.append(deal_card())
         else:
           continue_play = False
-          
+
+    while computer_score != 0 and computer_score < 17:
+      computer_cards.append(deal_card())
+      computer_score = calclulate_score(computer_cards)
+      
 
 
